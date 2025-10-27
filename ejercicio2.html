@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     function cambiarColor(){
+            const elementos=document.getElementsByClassName('nota');
+            for (var i=0; i<elementos.length; i++){
+                elementos[i].style.color="blue";
+            }
+        }
+</script>
+<body>
+    <h1>Aplicaciones Web, JS Y DOM</h1>
+    <hr>
+    <h2>COLOR</h2>
+    <hr>
+    <p class="nota">Oscar</p>
+     <p class="nota">Duran</p>
+      <p class="nota">Hernández</p>
+      <input type ="button" value="Cambiar_Color" onclick="cambiarColor()">
+</body>
+</html>

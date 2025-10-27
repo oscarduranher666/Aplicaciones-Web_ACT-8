@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probandon co JS</title>
+    <script>
+         var img;
+            var texto;//let
+        function cambiar(){
+          
+            if(document.getElementById8n('btn').value=='Encender'){
+                texto="Apagar";
+                img="images/foco1.jpg";
+
+            }else{ 
+            texto="Encender";
+            img="images/foco.png";
+          
+        }
+        document.getElementById('foco').src=img;
+            document.getElementById('btn').value=texto;
+
+    </script>
+</head>
+<body>
+    <h1>¿Que es Java_S</h1>
+   
+      <input id="btn" type="button" value="Encender"
+     onclick="cambiar()">
+ 
+    <img id="foco" src="images/foco1.jpg" alt="">
+    
+</body>
+</html>

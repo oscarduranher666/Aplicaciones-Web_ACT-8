@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiarTitulo(){
+            document.getElementById('titulo').innerText="pedro, se te olvido sacar la basura ayer";
+        }
+        function cambiarColor(){
+            const elementos=document.getElementsByClassName('mensaje');
+            for (var i=0; i<elementos.length; i++){
+                elementos[i].style.color="yellow";
+            }
+        }
+        function marcarTareas(){
+            const tareas= document.querySelectorAll('.tarea');
+            tareas.forEach((tarea, index)=>{
+                tarea.innerText= `☑ ${tarea,innerText}`;
+        });
+    }
+    function algo(index){
+        const tarea= document.querySelectorAll(".tarea");
+        tarea[index].innerText=`☑ ${tarea[index].innerText}`;
+        tarea[index].style.color='green';
+
+
+    }
+        </script>
+
+</head>
+<body>
+    <h1>selectores y metodos de acceso al DOM</h1>
+    <hr>
+    <h2 id="titulo">Bienvenidos LEVN403</h2>
+    <input type="button" value="cambiarTitulo" onclick="cambiarTitulo()">
+    <hr>
+    <p class="mensaje">Primer Mensaje</p>
+    <p class="mensaje">Segundo Mensaje</p>
+    <p class="mensaje">Tercer Mensaje</p>
+    <input type ="button" value="cambiarColor" onclick="cambiarColor()">
+    
+    <hr>
+    <ul>
+        <li class="tarea" onclick="algo (0)">Sacar la basura</li>
+        <li class="tarea" onclick="algo (1)">Lavar los platos</li>
+        <li class="tarea" onclick="algo (2)">Haciar la cosina</li>
+    </ul>
+    <input type="button" value="Listo" onclick="marcarTareas()">
+    
+</body>
+</html>

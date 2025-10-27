@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+      let clics=0;
+   function Contador(){
+       clics=clics+1;
+       const display=document.getElementById('contadorClics');
+       display.innerText="Clics: "+clics;
+   }
+</script>
+<body>
+    <h2>Contador de Clics</h2>
+    <p id="contadorClics">Clics: 0 </p>
+    <input type="button" value="Haz clic" onclick="Contador()">
+</body>
+</html>

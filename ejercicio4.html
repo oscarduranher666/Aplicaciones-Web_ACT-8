@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     function cambiar(){
+       const fondo= 'blue';
+       const secciones=document.querySelectorAll('section');
+       for(let i=0; i<secciones.length; i++){
+           secciones[i].style.backgroundColor=fondo;
+       }
+   }
+</script>
+<body>
+    <section style="background-color: aquamarine;">
+        <h2>Modo ONE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel iste odit placeat, sequi ut autem repellat, recusandae aperiam porro modi ullam dolore alias, qui cumque! Quasi temporibus minus labore!</p>
+    </section>
+    <section style="background-color: #e0ffff;">
+        <H3>MODO TWO</H3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus quis inventore, minima nisi, voluptatum fuga ratione blanditiis tempora obcaecati reprehenderit esse debitis perferendis quae aliquid? Perspiciatis, eveniet. Hic, obcaecati.</p>
+    </section>
+    <section style="background-color:skyblue">
+        <h4>Modo Three</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusantium, non pariatur ipsum minima eaque. Tenetur sunt et deleniti labore, odio, laborum in omnis fugit libero, eligendi maiores rem aspernatur.</p>
+    </section>
+    <input id="btn" type="button" value="COLOR_PRE" onclick="cambiar()">
+</body>
+</html>

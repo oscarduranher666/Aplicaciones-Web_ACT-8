@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+        function cambiar(){
+           const imagen=document.querySelector('#imagen');
+           const boton=document.querySelector('#btn');
+           if (imagen.style.display === 'none') {
+               imagen.style.display = 'block';
+               boton.value = 'Ocultar';
+           } else {
+               imagen.style.display = 'none';
+               boton.value = 'Mostrar';
+           }
+       }
+</script>
+<body>
+    <h1>IMAGEN</h1>
+    <img id="imagen" src="imagenes/Wall-e.png" alt="">
+    <hr>
+       <input id="btn" type="button" value="Ocultar"
+     onclick="cambiar()">
+</body>
+</html>
